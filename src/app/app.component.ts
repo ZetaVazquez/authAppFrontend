@@ -9,7 +9,7 @@ import { AuthService } from './auth/services/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  
   private authService = inject( AuthService );
   private router = inject( Router );
 
@@ -35,7 +35,7 @@ export class AppComponent {
         return;
 
       case AuthStatus.notAuthenticated:
-        this.router.navigateByUrl('/dashboard');
+        this.router.navigateByUrl('/auth/login');
         return;
 
     }

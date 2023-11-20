@@ -18,7 +18,7 @@ export class LoginPageComponent implements OnInit{
 
   public myForm: FormGroup=this.fb.group({
     email:['zaida@prueba.com',[Validators.required,Validators.email]],
-    password:['1234566',[Validators.required,Validators.minLength(6)]]
+    password:['abcdefg',[Validators.required,Validators.minLength(6)]]
 
   } )
 
